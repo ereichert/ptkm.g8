@@ -1,0 +1,28 @@
+*.log
+
+# sbt specific
+.cache
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/target
+project/project
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+*.iml
+
+# ENSIME specific
+.ensime_cache/
+.ensime
+.idea
+output_logs/
+
+# TypeScript
+node_modules/
+logs/

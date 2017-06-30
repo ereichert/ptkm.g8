@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "mapRoot": "/assets",
+    "sourceRoot": "/assets",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*",
+        "target/web/node-modules/main/webjars/*"
+      ]
+    },
+    "strict":true,
+    "noUnusedLocals":true,
+    "noUnusedParameters": true,
+    "lib": ["es6", "dom"]
+  },
+  "exclude": [
+    "node_modules",
+    "project/target",
+    "typings/main",
+    "typings/main.d.ts",
+    "typings/browser",
+    "target/web"
+  ]
+}
