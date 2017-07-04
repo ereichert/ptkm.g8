@@ -7,4 +7,4 @@ SystemJS.config({
     map : map
 });
 
-SystemJS.import(jsRoutes.controllers.Assets.versioned("javascripts/some_view_js/runner.js").url);
+SystemJS.import(jsRoutes.controllers.Assets.versioned("javascripts/adder/runner.js").url);

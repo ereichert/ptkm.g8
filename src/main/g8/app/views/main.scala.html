@@ -16,12 +16,40 @@
 
         <script src="@routes.JsRoutesController.jsRoutes" type="text/javascript" defer></script>
         <script src="@routes.Assets.versioned("lib/systemjs/dist/system.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/some_view_js/loader.js")" type="text/javascript" defer></script>
+        <script src="@routes.Assets.versioned("javascripts/adder/loader.js")" type="text/javascript" defer></script>
 
     </head>
     <body>
-        @* And here's where we render the `Html` object containing
-        * the page content. *@
-        @content
+        <p>
+            <label for="addend1">Addend 1</label>
+            <input
+                type="text"
+                id="addend1"
+                name="addend1"
+                value="0"
+                data-bind="init, value: addend1"
+            />
+        </p>
+        <p>
+            <label for="addend2">Addend 2</label>
+            <input
+                type="text"
+                id="addend2"
+                name="addend2"
+                value="0"
+                data-bind="init, value: addend2"
+            />
+        </p>
+        <p>
+            <label for="sum">Sum</label>
+            <input
+                type="text"
+                id="sum"
+                name="sum"
+                value=""
+                data-bind="value: sum"
+                readonly
+            />
+        </p>
     </body>
 </html>
