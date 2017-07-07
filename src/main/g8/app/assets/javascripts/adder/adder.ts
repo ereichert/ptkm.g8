@@ -1,4 +1,4 @@
-import {ko} from "./knockout.js"
+import {ko} from "./knockout_loader.js"
 
 export default class Adder {
 

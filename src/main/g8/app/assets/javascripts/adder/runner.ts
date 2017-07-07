@@ -1,4 +1,4 @@
-import {ko} from "./knockout.js"
+import {ko} from "./knockout_loader.js";
 import Adder from "./adder.js";
 
 let adder = new Adder();

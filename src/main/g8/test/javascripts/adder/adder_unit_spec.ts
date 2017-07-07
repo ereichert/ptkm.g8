@@ -1,13 +1,14 @@
-// import hello from './hello';
 import { should } from 'chai';
 import 'mocha';
+import Adder from "../../../app/assets/javascripts/adder/adder";
 
 should();
 
-describe('something', () => {
+describe('Adder', () => {
 
-    it('should fail', () => {
-        const x = true;
-        x.should.equal(false);
+    it('should return a zeroed addend 1 when created.', () => {
+        const adder = new Adder();
+
+        adder.addend1().should.equal("0");
     });
 });

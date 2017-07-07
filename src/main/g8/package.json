@@ -3,18 +3,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha --compilers ts:ts-node/register test/javascripts/**/*_unit_spec.ts"
-  },
-  "dependencies": {
-    "@types/knockout": "^3.4.41"
+    "test": "tsc -p test/javascripts/tsconfig.json && mocha test/javascripts/target/test/**/*_unit_spec.js",
+    "clean": "rm -rf test/javascripts/target"
   },
   "devDependencies": {
     "@types/chai": "^4.0.1",
+    "@types/knockout": "^3.4.41",
     "@types/mocha": "^2.2.41",
     "chai": "^4.0.2",
-    "mocha": "^3.4.2",
-    "system": "^1.3.0",
-    "ts-node": "^3.1.0",
-    "typescript": "^2.3.3"
+    "knockout": "^3.4.2",
+    "mocha": "^3.4.2"
   }
 }
